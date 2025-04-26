@@ -3,7 +3,7 @@
 FROM python:3.11-slim
 
 # Set the working directory in the container
-WORKDIR /assignment2
+WORKDIR /assignment2 
 
 # Copy the application files to the container
 COPY . /assignment2
