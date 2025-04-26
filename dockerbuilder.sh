@@ -1,19 +1,16 @@
 #!/bin/bash
+cd assignment2/
+sudo docker build -t flask-app:01 .
 
-# Define the image name
-IMAGE_NAME="assignment2:latest"
-
-#start the docker daemon if not running
-sudo systemctl start docker
-
-# Build the Docker image
-echo "Building Docker image..."
-docker build -t $IMAGE_NAME .
-
-# Check if the build was successful
-if [ $? -eq 0 ]; then
-    echo "Docker image built successfully: $IMAGE_NAME"
-else
-    echo "Failed to build Docker image."
-    exit 1
-fi
+sudo docker run -d -p 5000:5000 flask-app:01
+echo "Docker container is running. You can access the Flask app at http://localhost:5000"
+# To stop the container, you can use:
+# sudo docker stop <container_id>
+# To remove the container, you can use:
+# sudo docker rm <container_id>
+# To remove the image, you can use:
+# sudo docker rmi flask-app:01
+# To list all running containers, you can use:
+# sudo docker ps
+# To list all images, you can use:
+# sudo docker images

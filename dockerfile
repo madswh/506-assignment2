@@ -9,7 +9,7 @@ WORKDIR /assignment2
 COPY . /assignment2
 
 # Install the required Python packages
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Expose port 5000
 EXPOSE 5000
