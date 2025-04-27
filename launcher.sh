@@ -8,4 +8,4 @@ else
     echo "Image already exists, skipping build."
 fi
 
-docker run -d -p 5000:5000 --rm flask-app:01
+docker run -d -p 5001:5001 --rm flask-app:01
