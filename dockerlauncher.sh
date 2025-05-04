@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker run -d -p 5000:5000 --rm madswh/flask-app:01
+docker run --rm madswh/flask-app:01
