@@ -1,3 +1,4 @@
 #this file was created by ChatGPT
 
 flask == 3.1.0
+webbrowser == 0.9.4

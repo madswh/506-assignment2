@@ -1,4 +1,5 @@
 from flask import Flask
+import webbrowser
 import datetime
 
 app = Flask(__name__)
@@ -10,4 +11,4 @@ def index():
 def datetime():
     return f"Current date and time: {datetime.datetime.now()}"
 
-app.run(host="0.0.0.0/0", port=5000, debug=True)
+app.run(host="localhost", port=5000, debug=True)
