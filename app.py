@@ -1,5 +1,4 @@
 from flask import Flask
-import webbrowser
 import datetime
 
 app = Flask(__name__)
